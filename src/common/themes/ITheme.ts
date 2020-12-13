@@ -6,7 +6,6 @@ export default interface ITheme {
     grey: string;
   };
   spacing: {
-    tiny: string;
     xsmall: string;
     small: string;
     medium: string;

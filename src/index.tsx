@@ -5,7 +5,6 @@ import { RendererProvider } from 'react-fela';
 import { renderer } from './fela.config';
 
 import 'reset-css';
-import './index.css';
 
 import Layout from './components/Layout';
 import { BaseTheme } from './common/themes';

@@ -10,11 +10,15 @@ const Main: React.FC = () => {
 
   return (
     <main className={css(styles.main)}>
-      <p>
+      <p className={css(styles.blurb)}>
         I am an experienced developer specialising in interactive web applications. I take pride in creating modern,
         responsive and progressive user experiences. I am always learning, always improving, and I am always excited by
         what I do.
       </p>
+
+      <div>
+        <h3>Experience</h3>
+      </div>
     </main>
   );
 };

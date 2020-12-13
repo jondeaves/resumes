@@ -10,7 +10,28 @@ const Aside: React.FC = () => {
 
   return (
     <aside className={css(styles.aside)}>
-      <p>I'm over here</p>
+      <div className={css(styles.contact)}>
+        <h3>Contact</h3>
+        <ul>
+          <li>
+            <a href="mailto:hello@jondeaves.me">hello@jondeaves.me</a>
+          </li>
+          <li>
+            <a href="https://uk.linkedin.com/in/jondeaves" rel="external">
+              linkedin.com/in/jondeaves
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div className={css(styles.skills)}>
+        <h3>Skills</h3>
+        <ul>
+          <li>HTML / CSS / JS / TS</li>
+          <li>NodeJS / React / Redux</li>
+          <li>TDD / BDD</li>
+        </ul>
+      </div>
     </aside>
   );
 };
