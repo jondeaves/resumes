@@ -8,4 +8,5 @@ export type FelaWithStylesType<P> = (
 ) => IStyle & {
   atMobileSmall?: IStyle;
   atMobileLarge?: IStyle;
+  ':not(:last-child)'?: IStyle;
 };

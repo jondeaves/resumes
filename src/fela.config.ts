@@ -57,7 +57,7 @@ renderer.renderStatic(`
   h5,
   h6 {
     font-family: 'Roboto', sans-serif;
-    font-weight: normal;
+    font-weight: 600;
     line-height: 125%;
   }
 
@@ -88,7 +88,7 @@ renderer.renderStatic(`
   }
 
   h3 {
-    ${fontSizeStr(theme, 'epsilon')}
+    ${fontSizeStr(theme, 'delta')}
     font-weight: bold;
     letter-spacing: 0.1rem;
     margin-bottom: ${theme.spacing.xsmall};
@@ -104,11 +104,7 @@ renderer.renderStatic(`
   }
 
   ul {
-    margin-bottom: ${theme.spacing.medium};
-  }
-
-  li {
-    ${fontSizeStr(theme, 'epsilon')}
-    margin-bottom: ${theme.spacing.xsmall};
+    list-style: inherit;
+    margin-left: ${theme.spacing.large};
   }
 `);
