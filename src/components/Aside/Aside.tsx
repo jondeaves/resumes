@@ -22,12 +22,23 @@ const Aside: React.FC = () => {
         </li>
       </ul>
 
-      <h3 className={css(styles.skills)}>Skills</h3>
+      <h3 className={css(styles.section)}>Skills</h3>
       <ul>
         <li>HTML / CSS / JS / TS</li>
         <li>NodeJS / React / Redux</li>
         <li>TDD / BDD</li>
         <li>AWS / Docker / Git / Jenkins</li>
+      </ul>
+
+      <h3 className={css(styles.section)}>Certifications</h3>
+      <ul>
+        <li>
+          <small>
+            <strong>JavaScript - Advanced Programming</strong>
+            <br />
+            NobleProg (2015)
+          </small>
+        </li>
       </ul>
     </aside>
   );

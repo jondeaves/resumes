@@ -1,5 +1,3 @@
-import { fontSize } from '../../common/helpers';
-
 import { AsideStyles } from './Aside.types';
 
 const styles: AsideStyles = {
@@ -13,15 +11,14 @@ const styles: AsideStyles = {
     },
 
     '> ul > li': {
+      fontSize: theme.typography.sizes.epsilon,
       marginBottom: theme.spacing.xsmall,
-
-      ...fontSize(theme, 'epsilon'),
     },
   }),
 
   contact: () => ({}),
 
-  skills: ({ theme }) => ({
+  section: ({ theme }) => ({
     marginTop: theme.spacing.medium,
   }),
 };

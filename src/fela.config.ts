@@ -31,7 +31,8 @@ renderer.renderStatic(`
   #root {
     background-color: ${theme.color.tertiary};
     font-size: 10px;
-    height: 100vh;
+    height: 100%;
+    page-break-after: always;
   }
 
   *,
@@ -95,8 +96,7 @@ renderer.renderStatic(`
     text-transform: uppercase;
   }
 
-  p,
-  li {
+  p {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
 
@@ -106,5 +106,27 @@ renderer.renderStatic(`
   ul {
     list-style: inherit;
     margin-left: ${theme.spacing.large};
+  }
+
+  li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: ${theme.typography.sizes.delta};
+    line-height: 125%;
+  }
+
+  small {
+    font-size: 14px;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  @media print {
+    a,
+    abbr {
+      text-decoration: none;
+    }
   }
 `);

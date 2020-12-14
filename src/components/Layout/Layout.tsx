@@ -17,8 +17,8 @@ const Layout: React.FC = () => {
       <Header />
 
       <div className={css(styles.wrapper)}>
-        <Main />
         <Aside />
+        <Main />
       </div>
     </React.Fragment>
   );
