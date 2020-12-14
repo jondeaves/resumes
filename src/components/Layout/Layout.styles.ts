@@ -20,19 +20,6 @@ const styles: LayoutStyles = {
       ...padding(theme.spacing.large, theme.spacing.small),
     },
   }),
-
-  main: ({ theme }) => ({
-    background: 'deepskyblue',
-    // width: '70%',
-
-    // ...padding(theme.spacing.large, theme.spacing.small, theme.spacing.large, theme.spacing.large),
-  }),
-
-  aside: ({ theme }) => ({
-    // background: theme.color.grey,
-    // width: '30%',
-    // ...padding(theme.spacing.large, theme.spacing.small),
-  }),
 };
 
 export default styles;
