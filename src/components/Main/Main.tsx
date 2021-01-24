@@ -18,7 +18,7 @@ const Main: React.FC = () => {
       startDate: '2020-01-01',
       highlights: [
         'Became more active in mentoring of junior members of team',
-        "Taking ownership of the DataDog implementation and investigating it's value for usage as monitoring and analytics",
+        "Taking ownership of the DataDog implementation and proving it's value for usage as monitoring and analytics",
         'Working with other engineers in the team to plan and improve codebases as we scale',
       ],
     },
@@ -29,10 +29,11 @@ const Main: React.FC = () => {
       startDate: '2018-05-22',
       endDate: '2020-01-01',
       highlights: [
-        'Working on React as part of the Frontend team',
-        'Focused on Deposit and Withdrawals web pages',
+        'Working with React as part of the Frontend team',
+        'Focused on the Deposit and Withdrawal areas',
         'Using Google Tag Manager and Amplitude to capture analytics',
         'Focus on improving user experience and code quality',
+        'Working in a multi-displined agile team',
       ],
     },
 
@@ -43,9 +44,10 @@ const Main: React.FC = () => {
       startDate: '2018-01-08',
       endDate: '2018-05-18',
       highlights: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate',
+        'Working with React as part of the web team',
+        'Took ownership of improvements to code quality and consistency for the web team',
+        'Created and maintained the CI pipelines across Web and Backend',
+        'Working in a multi-displined agile team',
       ],
     },
 
@@ -56,9 +58,9 @@ const Main: React.FC = () => {
       startDate: '2016-01-25',
       endDate: '2018-01-05',
       highlights: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate',
+        'Worked on a project that required strick adherence to GDS guidelines and is now live on gov.uk',
+        'Working with Angular 1.x, NodeJS and end-to-end testing suites',
+        'Working in a multi-displined agile team',
       ],
     },
 
@@ -69,9 +71,8 @@ const Main: React.FC = () => {
       startDate: '2015-02-16',
       endDate: '2016-01-22',
       highlights: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate',
+        'Working with PHP and jQuery to build websites against provided designs',
+        'Management and upkeep of server hardware, databases and site deployments',
       ],
     },
 
@@ -81,11 +82,7 @@ const Main: React.FC = () => {
       company: 'Arquila',
       startDate: '2013-05-13',
       endDate: '2015-02-05',
-      highlights: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate',
-      ],
+      highlights: ['Working with PHP and jQuery', 'Working on feature development and support requests'],
     },
 
     {
@@ -95,9 +92,8 @@ const Main: React.FC = () => {
       startDate: '2011-12-10',
       endDate: '2013-05-10',
       highlights: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate',
+        'Working with Classic ASP and PrototypeJS as part of a small feature development team',
+        'Manage time between feature development of the main system and building client websites which integrated with the main system',
       ],
     },
   ];

@@ -112,7 +112,7 @@ renderer.renderStatic(`
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: ${theme.typography.sizes.delta};
-    line-height: 125%;
+    line-height: 150%;
   }
 
   small {
