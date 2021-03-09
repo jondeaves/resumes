@@ -1,5 +1,8 @@
 import React from 'react';
 import { useFela } from 'react-fela';
+import { differenceInDays, isAfter, sub } from 'date-fns';
+
+import { getParameterByName } from '../../common/helpers';
 
 import ITheme from '../../common/themes/ITheme';
 import ExperienceItem from '../../common/types/ExperienceItem';
@@ -10,7 +13,7 @@ import styles from './Main.styles';
 const Main: React.FC = () => {
   const { css } = useFela<ITheme, Record<string, unknown>>();
 
-  const experienceItems: ExperienceItem[] = [
+  let experienceItems: ExperienceItem[] = [
     {
       id: 1,
       title: 'Senior Software Engineer',
@@ -98,6 +101,27 @@ const Main: React.FC = () => {
     },
   ];
 
+  const limit = Number.parseInt(getParameterByName('limit', '0'), 10);
+
+  if (typeof limit === 'number' && limit > 0) {
+    const compareDate = sub(new Date(), {
+      years: limit,
+    });
+
+    experienceItems = experienceItems.filter((item) => {
+      if (!item.endDate) {
+        return true;
+      }
+
+      return isAfter(new Date(item.endDate), compareDate);
+    });
+  }
+
+  // eslint-disable-next-line no-console
+  console.log(limit);
+  // eslint-disable-next-line no-console
+  console.log(typeof limit);
+
   return (
     <main className={css(styles.main)}>
       <p className={css(styles.blurb)}>
@@ -107,7 +131,10 @@ const Main: React.FC = () => {
       </p>
 
       <div>
-        <h3>Experience</h3>
+        <h3>
+          Experience
+          {typeof limit === 'number' && limit > 0 && <small className={css(styles.limit)}>(Past {limit} years)</small>}
+        </h3>
 
         {experienceItems.map((item) => (
           <Experience key={item.id} item={item} />

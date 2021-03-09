@@ -14,3 +14,16 @@ export const fontSizeStr = (theme: ITheme, size: Size): string => {
     line-height: ${obj.lineHeight};
   `;
 };
+
+export const getParameterByName = (name: string, defaultValue = '', url = window.location.href): string => {
+  const parsedName = name.replace(/[[\]]/g, '\\$&');
+
+  const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`);
+  const results = regex.exec(url);
+
+  if (!results || !results[2]) {
+    return defaultValue;
+  }
+
+  return decodeURIComponent(results[2].replace(/\+/g, ' '));
+};

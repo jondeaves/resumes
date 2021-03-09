@@ -1,5 +1,4 @@
-import { padding } from 'polished';
-
+import { fontSize } from '../../common/helpers';
 import { MainStyles } from './Main.types';
 
 const styles: MainStyles = {
@@ -9,6 +8,12 @@ const styles: MainStyles = {
 
   blurb: ({ theme }) => ({
     marginBottom: theme.spacing.medium,
+  }),
+
+  limit: ({ theme }) => ({
+    marginLeft: theme.spacing.xsmall,
+
+    ...fontSize(theme, 'eta'),
   }),
 };
 
