@@ -1,0 +1,86 @@
+{
+  "name": "resumes",
+  "description": "An index of resumes for distribution",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Jon Deaves <hello@jondeaves.me> https://jondeaves.me",
+  "homepage": "https://resumes.jondeaves.me",
+  "contributors": [
+    "Jon Deaves <hello@jondeaves.me> https://jondeaves.me"
+  ],
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier src/**/*.{ts,tsx} --ignore-path ./.prettierignore --write",
+    "lint": "eslint src/**/*.{ts,tsx} --no-error-on-unmatched-pattern",
+    "prestart": "cp verifyTypeScriptSetup.js node_modules/react-scripts/scripts/utils"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.14.10",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "date-fns": "^2.16.1",
+    "fela": "~11.4.0",
+    "fela-dom": "~11.4.0",
+    "fela-plugin-fallback-value": "~11.4.0",
+    "fela-plugin-friendly-pseudo-class": "~11.4.0",
+    "fela-plugin-prefixer": "~11.4.0",
+    "fela-plugin-unit": "~11.4.0",
+    "fela-utils": "~11.4.0",
+    "polished": "~4.0.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-fela": "~11.4.0",
+    "react-scripts": "4.0.1",
+    "reset-css": "^5.0.1",
+    "typescript": "^4.0.3",
+    "web-vitals": "^1.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "~11.0.0",
+    "@typescript-eslint/eslint-plugin": "~4.9.0",
+    "commitlint": "~11.0.0",
+    "eslint-config-airbnb-typescript": "~12.0.0",
+    "eslint-config-prettier": "~6.15.0",
+    "eslint-formatter-pretty": "~4.0.0",
+    "eslint-plugin-eslint-comments": "~3.2.0",
+    "eslint-plugin-import": "~2.22.1",
+    "eslint-plugin-jsx-a11y": "~6.4.1",
+    "eslint-plugin-promise": "~4.2.1",
+    "eslint-plugin-react": "~7.21.5",
+    "eslint-plugin-unicorn": "~23.0.0",
+    "husky": "~4.3.0",
+    "lint-staged": "~10.5.2",
+    "prettier": "~2.2.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "./node_modules/.bin/lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx,js}": [
+      "yarn format",
+      "yarn lint"
+    ]
+  }
+}
