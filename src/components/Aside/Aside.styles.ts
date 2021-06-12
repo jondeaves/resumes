@@ -2,7 +2,7 @@ import { AsideStyles } from './Aside.types';
 
 const styles: AsideStyles = {
   aside: ({ theme }) => ({
-    background: `linear-gradient(180deg, ${theme.color.grey} 0%, ${theme.color.grey} 90%, ${theme.color.tertiary} 100%)`,
+    background: `linear-gradient(180deg, ${theme.color.grey} 0%, ${theme.color.grey} 80%, ${theme.color.tertiary} 100%)`,
 
     '> ul': {
       listStyle: 'none',

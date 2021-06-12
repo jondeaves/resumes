@@ -20,6 +20,10 @@ const Layout: React.FC = () => {
         <Aside />
         <Main />
       </div>
+
+      <footer>
+        <p>** Note that printing at 85% zoom should make it fit neatly onto one page</p>
+      </footer>
     </React.Fragment>
   );
 };

@@ -7,6 +7,7 @@ const styles: MainStyles = {
   }),
 
   blurb: ({ theme }) => ({
+    ...fontSize(theme, 'epsilon'),
     marginBottom: theme.spacing.medium,
   }),
 

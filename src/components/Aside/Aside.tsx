@@ -10,6 +10,8 @@ const Aside: React.FC = () => {
 
   return (
     <aside className={css(styles.aside)}>
+      <h1>Jon Deaves</h1>
+      <h2>Senior Software Engineer</h2>
       <h3>Contact</h3>
       <ul>
         <li>
@@ -22,22 +24,22 @@ const Aside: React.FC = () => {
         </li>
       </ul>
 
-      <h3 className={css(styles.section)}>Skills</h3>
+      <h3 className={css(styles.section)}>Core Skills</h3>
       <ul>
         <li>HTML / CSS / JS / TS</li>
         <li>NodeJS / React / Redux</li>
-        <li>TDD / BDD</li>
-        <li>AWS / Docker / Git / Jenkins</li>
       </ul>
 
-      <h3 className={css(styles.section)}>Certifications</h3>
+      <h3 className={css(styles.section)}>Learning</h3>
       <ul>
         <li>
-          <small>
-            <strong>JavaScript - Advanced Programming</strong>
-            <br />
-            NobleProg (2015)
-          </small>
+          <h4>Rust</h4>
+          I'm currently learning Rust through the official Book, Rustlings and have plans for a few small projects.
+        </li>
+        <li>
+          <br />
+          <h4>Flutter</h4>I have built a number of Flutter apps as learning experiences; including an app to track our
+          office Table Tennis League which is deployed through a testing track on the Google Play Store.
         </li>
       </ul>
     </aside>

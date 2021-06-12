@@ -51,6 +51,12 @@ renderer.renderStatic(`
     flex-direction: column;
   }
 
+  footer > p {
+    ${fontSizeStr(theme, 'epsilon')}
+    padding: 16px 0;
+    text-align: center;
+  }
+
   h1,
   h2,
   h3,
@@ -62,7 +68,7 @@ renderer.renderStatic(`
     line-height: 125%;
   }
 
-  h1 {
+  header > h1 {
     ${fontSizeStr(theme, 'giga')}
     letter-spacing: 0.6rem;
     margin-bottom: 16px;
@@ -71,7 +77,7 @@ renderer.renderStatic(`
     text-transform: uppercase;
   }
 
-  h1::after {
+  header > h1::after {
     border-bottom: 2px solid ${theme.color.tertiary};
     bottom: -6px;
     content: ' ';
@@ -81,15 +87,37 @@ renderer.renderStatic(`
     width: 120px;
   }
 
-  h2 {
+  header > h2 {
     ${fontSizeStr(theme, 'delta')}
     letter-spacing: 0.1rem;
     text-align: center;
     text-transform: uppercase;
   }
 
+  aside > h1 {
+    display: none;
+    ${fontSizeStr(theme, 'gamma')}
+    letter-spacing: 0.1rem;
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  aside > h2 {
+    display: none;
+    ${fontSizeStr(theme, 'delta')}
+    letter-spacing: 0.1rem;
+    margin-bottom: 32px;
+  }
+
   h3 {
     ${fontSizeStr(theme, 'delta')}
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin-bottom: ${theme.spacing.xsmall};
+  }
+
+  h4 {
+    ${fontSizeStr(theme, 'zeta')}
     font-weight: bold;
     letter-spacing: 0.1rem;
     margin-bottom: ${theme.spacing.xsmall};
@@ -127,6 +155,18 @@ renderer.renderStatic(`
     a,
     abbr {
       text-decoration: none;
+    }
+
+    header > h1, header > h2 {
+      display: none;
+    }
+
+    aside > h1, aside > h2 {
+      display: block;
+    }
+
+    footer {
+      display: none;
     }
   }
 `);

@@ -11,6 +11,10 @@ const styles: HeaderStyles = {
     '> *': {
       color: theme.color.tertiary,
     },
+
+    '@media print': {
+      ...padding(0),
+    },
   }),
 };
 
