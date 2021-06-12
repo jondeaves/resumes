@@ -9,13 +9,13 @@ const styles: LayoutStyles = {
     justifyContent: 'space-between',
 
     '> main': {
-      width: '70%',
+      width: '100%',
 
       ...padding(theme.spacing.large, theme.spacing.small, theme.spacing.large, theme.spacing.large),
     },
 
     '> aside': {
-      width: '30%',
+      width: 380,
 
       ...padding(theme.spacing.large, theme.spacing.small),
     },
